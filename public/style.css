@@ -30,9 +30,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height:auto;
-  min-height:30vh;
-  height:auto !important;        /* for IE as it does not support min-height */
+  height: 150vh;
 }
 
 /* Carousel */
