@@ -1,6 +1,16 @@
 import * as deepar from "deepar";
 import Carousel from "./carousel.js";
 
+const process = require('node:process');
+
+process
+  .on('unhandledRejection', (reason, p) => {
+    console.error(reason, 'Unhandled Rejection at Promise', p);
+  })
+  .on('uncaughtException', err => {
+    console.error(err, 'Uncaught Exception thrown');
+  });
+
 // Log the version. Just in case.
 console.log("Deepar version: " + deepar.version);
 
@@ -32,6 +42,8 @@ console.log("Deepar version: " + deepar.version);
     "effects/Hope.deepar",
     "effects/Vendetta_Mask.deepar",
     "effects/Fire_Effect.deepar",
+    "effects/Emotion_Meter.deepar",
+    "effects/Ping_Pong.deepar",
   ];
 
   let deepAR = null;
