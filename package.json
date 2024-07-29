@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf dist && webpack --config webpack.config.js --mode production && cp -r public/* dist && cp -r node_modules/deepar dist/deepar-resources",
     "dev": "webpack serve --mode development --open --port 8888",
-    "build:digitalocean": "rm -rf dist && webpack --config webpack.config.js --mode production && cp -r public/* dist && cp -r node_modules/deepar dist/deepar-resources && npm install --production=false && npm run build && npm ci",
+    "build:digitalocean": "rm -rf dist && webpack --config webpack.config.js --mode production && cp -r public/* dist && cp -r node_modules/deepar dist/deepar-resources && npm install --production=false && npm run build && npm ci"
   },
   "author": "",
   "license": "MIT",
