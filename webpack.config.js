@@ -45,6 +45,9 @@ module.exports = {
       },
     ],
     compress: true,
-    port: 9000,
+    port: 8888,
+    allowedHosts: [
+      '.signafy.io'
+    ],
   },
 };
